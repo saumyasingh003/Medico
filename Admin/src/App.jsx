@@ -16,10 +16,10 @@ function App() {
   
         <Navbar />
         <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path = "/" element={<Navigate to='/login'/>}/>
+          <Route path="/admin/login" element={<Login />} />
+          <Route path = "/" element={<Navigate to='/admin/login'/>}/>
           <Route path="/admin" element={<ProtectedRoute requiredRole="admin"><Layout /></ProtectedRoute>}>
-            <Route path="*" element={<Dashboard />} />
+            <Route path="dashboard" element={<Dashboard />} />
             <Route path="appointments" element={<Appointment />} />
             <Route path="doctor/addnew" element={<AddDoctor />} />
             <Route path="addnew" element={<AddNewAdmin />} />

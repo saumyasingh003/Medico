@@ -30,7 +30,7 @@ const Login = () => {
         // Show success toast and navigate
         toast.success(response.data.message || "Login successful!");
         setTimeout(() => {
-          window.location.href = "/admin";
+          window.location.href = "/admin/dashboard";
         }, 500); // Delay redirect to allow toast to show
       }
     } catch (error) {

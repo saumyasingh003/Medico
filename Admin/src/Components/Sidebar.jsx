@@ -5,6 +5,7 @@ import {
   FaUserMd,
   FaUserPlus,
   FaUserShield,
+  FaSignOutAlt,
 } from "react-icons/fa";
 
 const Sidebar = ({ children }) => {
@@ -80,7 +81,23 @@ const Sidebar = ({ children }) => {
           Doctors
         </a>
 
+
+        <a
       
+          onClick={() => {
+            setActiveItem("Logout");
+          localStorage.clear();
+          window.location.href = "/admin/login"
+          }}
+          className={`flex items-center gap-3 w-full py-2 px-3 my-1 rounded-md text-left ${
+            activeItem === "Logout"
+              ? "text-green-900 font-semibold"
+              : "text-gray-500 bg-white"
+          } transition-all duration-200`}
+        >
+          <FaSignOutAlt /> 
+          Logout
+        </a>
       </div>
     </div>
   );

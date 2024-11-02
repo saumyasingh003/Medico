@@ -11,7 +11,7 @@ const ProtectedRoute = ({ children, requiredRole }) => {
 
     if (!isAuthenticated && userRole !== requiredRole) {
       toast.error("You must log in to view this page!");
-      navigate('/login'); 
+      navigate('/admin/login'); 
       return null;
     } 
  

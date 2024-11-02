@@ -20,7 +20,7 @@ const Navbar = () => {
           </a>
 
           <div className="flex md:order-2 space-x-4">
-            <a href="/login"
+            <a href="/admin/login"
               type="button"
               onClick={openModal}
               className="text-white px-4 py-2 bg-[#007162] hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-[#218380] font-medium rounded-lg text-md"
@@ -63,7 +63,7 @@ const Navbar = () => {
             <ul className="flex flex-col md:flex-row md:space-x-8 p-3 md:p-0 mt-4 md:mt-0 font-medium bg-gray-50 md:bg-transparent border border-gray-100 rounded-lg md:border-0 dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
               <li>
                 <a
-                  href="/admin"
+                  href="/admin/dashboard"
                   className="block py-2 px-5 text-[#218380] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#007162] dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                 >
                   Dashboard
