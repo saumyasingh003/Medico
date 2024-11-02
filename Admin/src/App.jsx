@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<ProtectedRoute requiredRole="admin"><Layout /></ProtectedRoute>}>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="*" element={<Dashboard />} />
             <Route path="appointments" element={<Appointment />} />
             <Route path="doctor/addnew" element={<AddDoctor />} />
             <Route path="addnew" element={<AddNewAdmin />} />
