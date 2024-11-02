@@ -16,7 +16,7 @@ const Login = () => {
 
   const handleLogin = async (values, { setSubmitting }) => {
     try {
-      const response = await axios.post("http://localhost:4000/user/admin/login", {
+      const response = await axios.post("https://medico-backend-wp55.onrender.com/user/admin/login", {
         email: values.email,
         password: values.password,
       });

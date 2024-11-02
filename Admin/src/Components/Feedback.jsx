@@ -14,7 +14,7 @@ const Feedback = () => {
 
   const fetchMessages = async () => {
     try {
-      const response = await fetch("http://localhost:4000/message/view");
+      const response = await fetch("https://medico-backend-wp55.onrender.com/message/view");
       if (!response.ok) {
         throw new Error("Failed to fetch messages");
       }

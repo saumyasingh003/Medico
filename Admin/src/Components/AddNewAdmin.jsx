@@ -23,7 +23,7 @@ const AddNewAdmin = () => {
       }
   
       // Store the response from the POST request
-      const response = await axios.post("http://localhost:4000/user/admin/addnew", formData);
+      const response = await axios.post("https://medico-backend-wp55.onrender.com/user/admin/addnew", formData);
   
       // Show success message from the response
       toast.success(response.data?.message);

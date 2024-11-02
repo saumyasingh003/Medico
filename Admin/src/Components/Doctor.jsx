@@ -12,7 +12,7 @@ const Doctor = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/doctor/viewDoctor");
+        const response = await axios.get("https://medico-backend-wp55.onrender.com/doctor/viewDoctor");
         setDoctors(response.data.doctors); 
       } catch (error) {
         toast.error("Failed to fetch doctors.");
@@ -36,7 +36,7 @@ const Doctor = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const response = await axios.delete(`http://localhost:4000/doctor/deleteDoctor/${id}`); // Use the correct ID format
+          const response = await axios.delete(`https://medico-backend-wp55.onrender.com/doctor/deleteDoctor/${id}`); // Use the correct ID format
           
           // Use success message from backend
           Swal.fire("Deleted!", response.data.message, "success");

@@ -37,7 +37,7 @@ const Doctors = () => {
 
     try {
       const response = await axios.get(
-        `http://localhost:4000/doctor/department/${selectedDepartment}`
+        `https://medico-backend-wp55.onrender.com/doctor/department/${selectedDepartment}`
       );
 
       const data = response.data;

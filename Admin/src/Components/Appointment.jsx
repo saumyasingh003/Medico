@@ -11,7 +11,7 @@ const Appointment = () => {
     const fetchAppointments = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/appointment/view"
+          "https://medico-backend-wp55.onrender.com/appointment/view"
         );
         if (response.data.success) {
           setAppointments(response.data.appointments);

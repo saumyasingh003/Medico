@@ -12,7 +12,7 @@ const OurDoctors = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/doctor/viewDoctor"); 
+        const response = await axios.get("https://medico-backend-wp55.onrender.com/doctor/viewDoctor"); 
         if (response.data.success) {
           setDoctors(response.data.doctors); 
         } else {

@@ -38,7 +38,7 @@ const AddDoctor = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/doctor/addDoctor",
+        "https://medico-backend-wp55.onrender.com/doctor/addDoctor",
         data,
         {
           headers: {

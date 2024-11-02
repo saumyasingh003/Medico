@@ -23,7 +23,7 @@ const SignUp = ({ isOpen, onClose }) => {
 
   const handleSignUp = async (values, { setSubmitting }) => {
     try {
-      const response = await axios.post("http://localhost:4000/user/signup", values);
+      const response = await axios.post("https://medico-backend-wp55.onrender.com/user/signup", values);
       toast.success(response?.data.message);
       window.location.href = "/";
       onClose();

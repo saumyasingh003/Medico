@@ -94,7 +94,7 @@ const Appointment = () => {
               onSubmit={async (values, { resetForm }) => {
                 try {
                   const response = await axios.post(
-                    "http://localhost:4000/appointment/send",
+                    "https://medico-backend-wp55.onrender.com/appointment/send",
                     values
                   );
                   console.log(response.data);

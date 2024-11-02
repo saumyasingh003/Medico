@@ -20,7 +20,7 @@ const Login = ({ isOpen, onClose }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:4000/user/login", {
+      const response = await axios.post("https://medico-backend-wp55.onrender.com/user/login", {
         email,
         password,
       });
