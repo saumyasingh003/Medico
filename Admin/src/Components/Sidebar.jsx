@@ -16,7 +16,7 @@ const Sidebar = ({ children }) => {
         <h2 className="text-lg font-bold mb-8 mt-5 ml-10">Admin Panel</h2>
 
         <a
-          href="/appointments"
+          href="/admin/appointments"
           onClick={() => setActiveItem("Appointments")}
           className={`flex items-center gap-3 w-full py-2 px-3 my-1 rounded-md text-left ${
             activeItem === "Appointments"
@@ -29,7 +29,7 @@ const Sidebar = ({ children }) => {
         </a>
 
         <a
-          href="/feedbacks"
+          href="/admin/feedbacks"
           onClick={() => setActiveItem("Feedback")}
           className={`flex items-center gap-3 w-full py-2 px-3 my-1 rounded-md text-left ${
             activeItem === "Feedback"
@@ -42,7 +42,7 @@ const Sidebar = ({ children }) => {
         </a>
 
         <a
-          href="/doctor/addnew"
+          href="/admin/doctor/addnew"
           onClick={() => setActiveItem("Add Doctor")}
           className={`flex items-center gap-3 w-full py-2 px-3 my-1 rounded-md text-left ${
             activeItem === "Add Doctor"
@@ -68,7 +68,7 @@ const Sidebar = ({ children }) => {
         </a>
 
         <a
-          href="/doctors"
+          href="/admin/doctors"
           onClick={() => setActiveItem("Doctors")}
           className={`flex items-center gap-3 w-full py-2 px-3 my-1 rounded-md text-left ${
             activeItem === "Doctors"

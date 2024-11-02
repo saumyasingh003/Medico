@@ -17,11 +17,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={<ProtectedRoute requiredRole="admin"><Layout /></ProtectedRoute>}>
+          <Route path="/admin" element={<ProtectedRoute requiredRole="admin"><Layout /></ProtectedRoute>}>
             <Route path="/" element={<Dashboard />} />
             <Route path="appointments" element={<Appointment />} />
             <Route path="doctor/addnew" element={<AddDoctor />} />
-            <Route path="admin/addnew" element={<AddNewAdmin />} />
+            <Route path="addnew" element={<AddNewAdmin />} />
             <Route path="feedbacks" element={<Feedback />} />
             <Route path="doctors" element={<Doctor />} />
           </Route>
