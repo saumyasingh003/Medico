@@ -63,7 +63,7 @@ const Navbar = () => {
             <ul className="flex flex-col md:flex-row md:space-x-8 p-3 md:p-0 mt-4 md:mt-0 font-medium bg-gray-50 md:bg-transparent border border-gray-100 rounded-lg md:border-0 dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
               <li>
                 <a
-                  href="/"
+                  href="/admin"
                   className="block py-2 px-5 text-[#218380] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#007162] dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                 >
                   Dashboard
