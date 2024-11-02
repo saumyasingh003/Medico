@@ -1,5 +1,5 @@
 import Dashboard from "./Components/Dashboard";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import AddDoctor from "./Components/AddDoctor";
 import AddNewAdmin from "./Components/AddNewAdmin";
@@ -17,6 +17,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/login" element={<Login />} />
+          <Route path = "/" element={<Navigate to='/login'/>}/>
           <Route path="/admin" element={<ProtectedRoute requiredRole="admin"><Layout /></ProtectedRoute>}>
             <Route path="*" element={<Dashboard />} />
             <Route path="appointments" element={<Appointment />} />
