@@ -18,7 +18,8 @@ function App() {
         <Routes>
           <Route path="/admin/login" element={<Login />} />
           <Route path = "/" element={<Navigate to='/admin/login'/>}/>
-          <Route path="/admin" element={<ProtectedRoute requiredRole="admin"><Layout /></ProtectedRoute>}>
+          <Route path="/adminfile
+          " element={<ProtectedRoute requiredRole="admin"><Layout /></ProtectedRoute>}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="appointments" element={<Appointment />} />
             <Route path="doctor/addnew" element={<AddDoctor />} />

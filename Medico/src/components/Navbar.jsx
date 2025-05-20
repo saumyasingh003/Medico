@@ -37,13 +37,7 @@ const Navbar = () => {
           </a>
           <div className="flex md:order-2 space-x-3 rtl:space-x-reverse">
             <div>
-              {/* <button
-                type="button"
-                onClick={openModal}
-                className="text-white px-3 bg-[#007162] hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-[#218380] font-medium rounded-lg text-md"
-              >
-                Get Started
-              </button> */}
+          
               <Dropdown
                 menu={{
                   items: [
@@ -72,6 +66,7 @@ const Navbar = () => {
                     <span>Click me</span>
                     <DownOutlined />
                   </button>
+                 
                 </a>
               </Dropdown>
               <Signup
@@ -79,9 +74,17 @@ const Navbar = () => {
                 onClose={() => setSignUpOpen(false)}
               />
 
+            
+
               {/* Modal Component */}
               <Login isOpen={isModalOpen} onClose={closeModal} />
             </div>
+
+             <a href="https://medico-admin-two.vercel.app/admin/login" target="_blank" className="inline-block px-4 py-2 bg-green-800 rounded-lg text-white hover:text-white hover:bg-green-700">
+  Admin Panel
+</a>
+
+
 
             <button
               data-collapse-toggle="navbar-sticky"
